@@ -1,0 +1,26 @@
+a.close(href="", title="{{'close' | translate}}")
+    tg-svg(
+        svg-icon="icon-close"
+    )
+form
+    h2.title(translate="LIGHTBOX.DELETE_ACCOUNT.CONFIRM")
+    p.subtitle Sorry to see you go. We'll be here if you should ever consider us again! :(
+    p(ng-bind-html="'LIGHTBOX.DELETE_ACCOUNT.BLOCK_PROJECT' | translate")
+    .newsletter
+        input(
+            name="unsuscribe"
+            type="checkbox"
+            id="unsuscribe"
+        )
+        label(for="unsuscribe") I don't wanna receive your newsletter anymore
+    .options
+        a.button-green(
+            href=""
+            title="{{'LIGHTBOX.DELETE_ACCOUNT.CANCEL' | translate}}"
+            translate="LIGHTBOX.DELETE_ACCOUNT.CANCEL"
+        )
+        a.button-red(
+            href=""
+            title="{{'LIGHTBOX.DELETE_ACCOUNT.ACCEPT' | translate}}"
+            translate="LIGHTBOX.DELETE_ACCOUNT.ACCEPT"
+        )
